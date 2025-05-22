@@ -602,7 +602,7 @@ opacity: 0.6;
 @media (max-width:480px){
   .slider-content{
     text-align: center;
-    left: 17%;
+    left: 15%;
   }
   .slider-content h1{
     font-size: 2rem;
@@ -620,8 +620,8 @@ opacity: 0.6;
   }
 
   .brands-icon{
-    width: 10vw;
-    height: 10vw;
+    width: 12vw;
+    height: 12vw;
   }
  
 }
