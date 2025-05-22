@@ -256,7 +256,7 @@ background-color: white;
 .slider-content button:hover{
    background-color: #c084fc;
   transform: scale(1.1);
-  transition: 0.2s ease;
+  transition: 0.5s ease-in-out;
   color: white;
 }
 
@@ -602,10 +602,10 @@ opacity: 0.6;
 @media (max-width:480px){
   .slider-content{
     text-align: center;
-    left: 15%;
+    left: 16%;
   }
   .slider-content h1{
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 3px;
   }
   .slider-content h4{
@@ -613,7 +613,7 @@ opacity: 0.6;
     margin-bottom: 3px;
   }
   .slider-content button a{
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .slider-left-button,.slider-right-button{
     font-size: 50px;
