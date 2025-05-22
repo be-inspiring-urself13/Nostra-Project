@@ -602,7 +602,7 @@ opacity: 0.6;
 @media (max-width:480px){
   .slider-content{
     text-align: center;
-    left: 16%;
+    left: 18%;
   }
   .slider-content h1{
     font-size: 2rem;
