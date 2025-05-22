@@ -68,31 +68,27 @@ search.addEventListener("keyup", function(event){
 })
 
 //checkbox
-  const checkboxes = document.querySelectorAll('.filter-checkbox');
+const checkboxes = document.querySelectorAll('.filter-checkbox');
   const products = document.querySelectorAll('.product-item');
 
   checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('change', filterProducts);
+    checkbox.addEventListener('change', () => {
+      const selectedFilters = Array.from(checkboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value.toLowerCase());
+
+      products.forEach(product => {
+        const tags = product.dataset.tags.toLowerCase();
+
+        // If no filters selected, show all
+        if (selectedFilters.length === 0) {
+          product.style.display = 'block';
+        } else {
+          // Show product only if it matches ALL selected tags
+          const matchesAll = selectedFilters.every(tag => tags.includes(tag));
+          product.style.display = matchesAll ? 'block' : 'none';
+        }
+      });
+    });
   });
 
-  function filterProducts() {
-    const activeFilters = Array.from(checkboxes)
-      .filter(cb => cb.checked)
-      .map(cb => cb.value.toLowerCase());
-
-    products.forEach(product => {
-      const title = product.querySelector('h2').innerText.toLowerCase();
-      const tags = product.getAttribute('data-tags').toLowerCase();
-
-      if (activeFilters.length === 0) {
-        product.style.display = '';
-        return;
-      }
-
-      const matches = activeFilters.some(filter =>
-        title.includes(filter) || tags.includes(filter)
-      );
-
-      product.style.display = matches ? '' : 'none';
-    });
-  }

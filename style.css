@@ -605,7 +605,7 @@ opacity: 0.6;
     left: 15%;
   }
   .slider-content h1{
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 3px;
   }
   .slider-content h4{
@@ -613,7 +613,7 @@ opacity: 0.6;
     margin-bottom: 3px;
   }
   .slider-content button a{
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .slider-left-button,.slider-right-button{
     font-size: 50px;
