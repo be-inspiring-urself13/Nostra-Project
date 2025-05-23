@@ -2,217 +2,215 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOSTRA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOSTRA</title>
 
-    <!-- Icon -->
-    <link rel="icon" href="./imagesz/icon.jpg">
+  <!-- Icon -->
+  <link rel="icon" href="./imagesz/icon.jpg">
 
-    <!-- Css File -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Css File -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- tailwindcss -->
+  <!-- tailwindcss -->
 
-    <link href="
+  <link href="
         https://cdn.jsdelivr.net/npm/tailwindcss@3.4.14/base.min.css
         " rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Font Awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!--Link Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <!--Link Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- offer bar -->
-    <div id="ad">
-        <h1>Sign Up and <span class="ad-color">GET 20% OFF</span> for your
-            first Order</h1>
-        <button id="closead">X</button>
-    </div>
-
-    <!-- nav bar -->
-    <section class="navbar">
-        <div class="flex items-center">
-            <h1><span style="color: #7e22ce; font-style: italic;">N</span><span style="color: black;">OSTRA</span></h1>
-        </div>
-
-        <div class="desktop-menu">
-            <p class="desc-link"><a href="./index.html">Home</a></p>
-            <p class="desc-link"><a href="#">New Arrival</a></p>
-            <p class="desc-link"><a href="#">Most Wanted</a></p>
-            <p class="desc-link"><a href="./collection.html">Collections</a></p>
-            <p class="desc-link"><a href="./contact.html">Contact Us</a></p>
-        </div>
-
-        <div class="myLogin" onclick="HandleLogin()">
-            <button id="Login"><i class="fa-solid fa-user"> Login</i></button>
-        </div>
-
-        <div class="togglebar" onclick="showmenu()">
-            <button><i class="fa-solid fa-bars md:hidden"
-                    style="color: #000000; font-size: 34px; margin-right: 5vw;"></i></button>
-        </div>
-    </section>
-
-    <!-- mobile div -->
-    <section id="mobile-menu">
-        <button id="mob-nav" onclick="closemenu()">X</button>
-        <div class="mob-links">
-            <p class="mob-link "><a href="./index.html">Home</a></p>
-            <p class="mob-link "><a href="#">New Arrival</a></p>
-            <p class="mob-link -"><a href="#">Most Wanted</a></p>
-            <p class="mob-link "><a href="./collection.html">Collections</a></p>
-            <p class="mob-link "><a href="./contact.html">Contact Us</a></p>
-        </div>
-
-    </section>
-
-    <!-- Wrapper Container -->
-<div class="px-6 lg:px-16 py-6 space-y-6 bg-purple-200">
-
-  <!-- Search Bar (Top) -->
-  <div class="relative mx-auto max-w-xl">
-    <input id="searchInput" type="text" placeholder="Search"
-      class="w-full border border-gray-300 rounded-full py-2 pl-10 pr-4 focus:outline-none shadow-lg">
-    <svg class="w-5 h-5 absolute left-3 top-2.5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
-      viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1111 3a7.5 7.5 0 015.65 13.65z" />
-    </svg>
+  <!-- offer bar -->
+  <div id="ad">
+    <h1>Sign Up and <span class="ad-color">GET 20% OFF</span> for your
+      first Order</h1>
+    <button id="closead">X</button>
   </div>
 
-  <!-- Main Layout -->
-  <div class="flex flex-row gap-6 relative">
-
-    <!-- Filters Sidebar -->
-    <div class=" w-[130px] sm:w-[200px] md:w-[200px] lg:w-[250px] space-y-6 border-r border-black pr-6">
-
-      <!-- Category -->
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold mb-2 "><span class="text-purple-800">Cate</span>gory</h2>
-        <div class="space-y-1 text-xl md:text-2xl">
-          <label><input type="checkbox" class="filter-checkbox" value="shirt"> Shirt</label><br>
-          <label><input type="checkbox" class="filter-checkbox" value="t-shirt"> T-Shirt</label><br>
-          <label><input type="checkbox" class="filter-checkbox" value="hoodie"> Hoodie</label><br>
-          <label><input type="checkbox" class="filter-checkbox" value="trendy"> Trendy</label>
-        </div>
-      </div>
-
-      <!-- Occasion -->
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold mb-2 "><span class="text-purple-800">Occa</span>sion</h2>
-        <div class="space-y-1 text-xl md:text-2xl">
-          <label><input type="checkbox" class="filter-checkbox" value="summer"> Summer</label><br>
-          <label><input type="checkbox" class="filter-checkbox" value="winter"> Winter</label><br>
-          <label><input type="checkbox" class="filter-checkbox" value="beach"> Beach</label>
-        </div>
-      </div>
-
-      <!-- Arrivals -->
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold mb-2"><span class="text-purple-800">Arri</span>vals</h2>
-        <div class="space-y-1 text-xl md:text-2xl">
-          <label><input type="checkbox" class="filter-checkbox" value="new"> New</label><br>
-          <label><input type="checkbox" class="filter-checkbox" value="old"> Old</label>
-        </div>
-      </div>
-
+  <!-- nav bar -->
+  <section class="navbar">
+    <div class="flex items-center">
+      <h1><span style="color: #7e22ce; font-style: italic;">N</span><span style="color: black;">OSTRA</span></h1>
     </div>
 
-  
+    <div class="desktop-menu">
+      <p class="desc-link"><a href="./index.html">Home</a></p>
+      <p class="desc-link"><a href="#">New Arrival</a></p>
+      <p class="desc-link"><a href="#">Most Wanted</a></p>
+      <p class="desc-link"><a href="./collection.html">Collections</a></p>
+      <p class="desc-link"><a href="./contact.html">Contact Us</a></p>
+    </div>
 
-    <!-- Products Grid -->
-    <div class="w-full lg:w-3/4 pl-6 mb-10" id="productContainer">
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-7 text-center" id="product-grid">
-        <!-- Product Items -->
-        <div class="product-item w-full h-60 sm:h-64 md:h-72 lg:h-80 mb-6" data-tags="shirt summer new">
-          <img src="./imagesz/collection-1.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
-          <h2 class="text-xl ">Stylish Sleeve Shirt</h2>
-          <p>$70</p>
+    <div class="myLogin" onclick="HandleLogin()">
+      <button id="Login"><i class="fa-solid fa-user"> Login</i></button>
+    </div>
+
+    <div class="togglebar" onclick="showmenu()">
+      <button><i class="fa-solid fa-bars md:hidden"
+          style="color: #000000; font-size: 34px; margin-right: 5vw;"></i></button>
+    </div>
+  </section>
+
+  <!-- mobile div -->
+  <section id="mobile-menu">
+    <button id="mob-nav" onclick="closemenu()">X</button>
+    <div class="mob-links">
+      <p class="mob-link "><a href="./index.html">Home</a></p>
+      <p class="mob-link "><a href="#">New Arrival</a></p>
+      <p class="mob-link -"><a href="#">Most Wanted</a></p>
+      <p class="mob-link "><a href="./collection.html">Collections</a></p>
+      <p class="mob-link "><a href="./contact.html">Contact Us</a></p>
+    </div>
+
+  </section>
+
+  <!-- Wrapper Container -->
+  <div class="px-6 lg:px-16 py-6 space-y-6 bg-purple-200">
+
+    <!-- Search Bar (Top) -->
+    <div class="relative mx-auto max-w-xl">
+      <input id="searchInput" type="text" placeholder="Search"
+        class="w-full border border-gray-300 rounded-full py-2 pl-10 pr-4 focus:outline-none shadow-lg">
+      <svg class="w-5 h-5 absolute left-3 top-2.5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1111 3a7.5 7.5 0 015.65 13.65z" />
+      </svg>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="flex flex-row gap-6 relative">
+
+      <!-- Filters Sidebar -->
+      <div class=" w-[130px] sm:w-[200px] md:w-[200px] lg:w-[250px] space-y-6 border-r border-black pr-6">
+
+        <!-- Category -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-2 "><span class="text-purple-800">Cate</span>gory</h2>
+          <div class="space-y-1 text-xl md:text-2xl">
+            <label><input type="checkbox" class="filter-checkbox" value="shirt"> Shirt</label><br>
+            <label><input type="checkbox" class="filter-checkbox" value="t-shirt"> T-Shirt</label><br>
+            <label><input type="checkbox" class="filter-checkbox" value="hoodie"> Hoodie</label><br>
+            <label><input type="checkbox" class="filter-checkbox" value="trendy"> Trendy</label>
+          </div>
         </div>
 
-        <div class="product-item w-full h-60 sm:h-64 md:h-72 lg:h-80 mb-6" data-tags="beach shirt old">
-          <img src="./imagesz/collection-3.jpeg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
-          <h2 class="text-xl">Floral Beach Shirt</h2>
-          <p>$85</p>
+        <!-- Occasion -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-2 "><span class="text-purple-800">Occa</span>sion</h2>
+          <div class="space-y-1 text-xl md:text-2xl">
+            <label><input type="checkbox" class="filter-checkbox" value="summer"> Summer</label><br>
+            <label><input type="checkbox" class="filter-checkbox" value="winter"> Winter</label><br>
+            <label><input type="checkbox" class="filter-checkbox" value="beach"> Beach</label>
+          </div>
         </div>
 
-        <div class="product-item w-full h-60 sm:h-64 md:h-72 lg:h-80 mb-6 " data-tags=" beach shirt new ">
-          <img src="./imagesz/collection-7.jpg" class= "w-full h-full object-contain rounded-xl shadow-xl" alt="">
-          <h2 class="text-xl">Stylish Beach Shirt</h2>
-          <p>$72</p>
+        <!-- Arrivals -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-2"><span class="text-purple-800">Arri</span>vals</h2>
+          <div class="space-y-1 text-xl md:text-2xl">
+            <label><input type="checkbox" class="filter-checkbox" value="new"> New</label><br>
+            <label><input type="checkbox" class="filter-checkbox" value="old"> Old</label>
+          </div>
         </div>
 
-        <div class="product-item w-full h-60 sm:h-64 md:h-72 lg:h-80 mb-6" data-tags="summer t-shirt old">
-          <img src="./imagesz/product-1.jpg" class="w-full h-full  object-contain rounded-xl shadow-xl" alt="">
-          <h2 class="text-xl">Summer T-Shirt</h2>
-          <p>$60</p>
-        </div>
+      </div>
 
-        <div class="product-item w-full h-60 sm:h-64 md:h-72 lg:h-80 mb-6" data-tags="summer Trendy shirt new">
-          <img src="./imagesz/collection-9.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
-          <h2 class="text-xl">Stylish Trendy Shirt</h2>
-          <p>$90</p>
-        </div>
 
-        <div class="product-item w-full h-60 sm:h-64 md:h-72 lg:h-80 mb-6" data-tags="summer t-shirt old">
-          <img src="./imagesz/product-3.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
-          <h2 class="text-xl">Summer T-Shirt</h2>
-          <p>$70</p>
-        </div>
 
-        <div class="product-item w-full h-60 sm:h-64 md:h-72 lg:h-80 mb-6" data-tags="winter hoodie new ">
-          <img src="./imagesz/collection-4.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
-          <h2 class="text-xl">Black and Grey Hoodie</h2>
-          <p>$65</p>
-        </div>
+      <!-- Products Grid -->
+      <div class="w-full lg:w-3/4 pl-6 mb-10" id="productContainer">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-7 text-center" id="product-grid">
+          <!-- Product Items -->
+          <div class="product-item w-full h-40 sm:h-64 md:h-72 lg:h-80 mb-10" data-tags="shirt summer new">
+            <img src="./imagesz/collection-1.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
+            <h2 class="text-xl ">Stylish Sleeve Shirt</h2>
+            <p>$70</p>
+          </div>
 
-        <div class="product-item w-full h-60 sm:h-64 md:h-72 lg:h-80 mb-6" data-tags="winter hoodie old">
-          <img src="./imagesz/collection-5.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
-          <h2 class="text-xl">Vintage Hawai Hoodie</h2>
-          <p>$75</p>
-        </div>
+          <div class="product-item w-full h-40 sm:h-64 md:h-72 lg:h-80 mb-10" data-tags="beach shirt old">
+            <img src="./imagesz/collection-3.jpeg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
+            <h2 class="text-xl">Floral Beach Shirt</h2>
+            <p>$85</p>
+          </div>
 
-        <div class="product-item w-full h-60 sm:h-64 md:h-72 lg:h-80 mb-6" data-tags="trendy winter hoodie new">
-          <img src="./imagesz/new__arrival__4.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
-          <h2 class="text-xl">Trendy Hoodie</h2>
-          <p>$95</p>
+          <div class="product-item w-full h-40 sm:h-64 md:h-72 lg:h-80 mb-10 " data-tags=" beach shirt new ">
+            <img src="./imagesz/collection-7.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
+            <h2 class="text-xl">Stylish Beach Shirt</h2>
+            <p>$72</p>
+          </div>
+
+          <div class="product-item w-full h-40 sm:h-64 md:h-72 lg:h-80 mb-10" data-tags="summer t-shirt old">
+            <img src="./imagesz/product-1.jpg" class="w-full h-full  object-contain rounded-xl shadow-xl" alt="">
+            <h2 class="text-xl">Summer T-Shirt</h2>
+            <p>$60</p>
+          </div>
+
+          <div class="product-item w-full h-40 sm:h-64 md:h-72 lg:h-80 mb-10" data-tags="summer Trendy shirt new">
+            <img src="./imagesz/collection-9.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
+            <h2 class="text-xl">Stylish Trendy Shirt</h2>
+            <p>$90</p>
+          </div>
+
+          <div class="product-item w-full h-40 sm:h-64 md:h-72 lg:h-80 mb-10" data-tags="summer t-shirt old">
+            <img src="./imagesz/product-3.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
+            <h2 class="text-xl">Summer T-Shirt</h2>
+            <p>$70</p>
+          </div>
+
+          <div class="product-item w-full h-40 sm:h-64 md:h-72 lg:h-80 mb-10" data-tags="winter hoodie new ">
+            <img src="./imagesz/collection-4.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
+            <h2 class="text-xl">Black and Grey Hoodie</h2>
+            <p>$65</p>
+          </div>
+
+          <div class="product-item w-full h-40 sm:h-64 md:h-72 lg:h-80 mb-10" data-tags="winter hoodie old">
+            <img src="./imagesz/collection-5.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
+            <h2 class="text-xl">Vintage Hawai Hoodie</h2>
+            <p>$75</p>
+          </div>
+
+          <div class="product-item w-full h-40 sm:h-64 md:h-72 lg:h-80 mb-10" data-tags="trendy winter hoodie new">
+            <img src="./imagesz/new__arrival__4.jpg" class="w-full h-full object-contain rounded-xl shadow-xl" alt="">
+            <h2 class="text-xl">Trendy Hoodie</h2>
+            <p>$95</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
- 
 
-    <!-- footer -->
 
-    <section class=" p-4 bg-purple-900">
-        <div class="text-white">
-            <div class="foot 1">
-                <h2 class="text-3xl pl-3 font-bold">Nostra</h2>
-                <p class="pt-2 pl-3 text-xl">Crafted with care for timeless fashion at nostra, we blend comfort with
-                    class just for you.</p>
-                <div class="flex gap-5 pt-3 pl-3 mt-1 text-2xl">
-                    <i class="icon fa-brands fa-instagram" style="color: white;"></i>
-                    <i class="icon fa-brands fa-twitter" style="color: white;"></i>
-                    <i class="icon fa-brands fa-facebook" style="color: white;"></i>
-                </div>
-            </div>
+  <!-- footer -->
 
-        </div>
+  <section class=" p-4 bg-purple-900">
+    <div class="text-white">
+      <h2 class="text-3xl pl-3 font-bold">Nostra</h2>
+      <p class="pt-2 pl-3 text-xl">Crafted with care for timeless fashion at nostra, we blend comfort with
+        class just for you.</p>
+      <div class="flex gap-5 pt-3 pl-3 mt-1 text-2xl">
+        <i class="icon fa-brands fa-instagram" style="color: white;"></i>
+        <i class="icon fa-brands fa-twitter" style="color: white;"></i>
+        <i class="icon fa-brands fa-facebook" style="color: white;"></i>
+      </div>
+      <p class="pt-3 pl-3 pb-4 text-xl">Let your outfit speak. @ 2023 Nostra.com</p>
+    </div>
 
-        <p class="text-white pt-3 pl-3 pb-4 text-xl">Let your outfit speak. @ 2023 Nostra.com</p>
-    </section>
 
-    <script src="./collection.js"></script>
+  </section>
+
+  <script src="./collection.js"></script>
 </body>
 
 </html>
